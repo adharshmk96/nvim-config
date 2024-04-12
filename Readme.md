@@ -4,9 +4,10 @@ Keymap Reference.
 
 jk - exit insert mode
 
+
+```lua
 <leader> - space
 
-``````lua
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
