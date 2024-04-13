@@ -22,6 +22,14 @@ return {
       },
       -- ensure these language parsers are installed
       ensure_installed = {
+        "go",
+        "gomod",
+        "gosum",
+        "gowork",
+        "rust",
+        "python",
+        "c",
+        "zig",
         "json",
         "javascript",
         "typescript",
@@ -29,10 +37,8 @@ return {
         "yaml",
         "html",
         "css",
-        "prisma",
         "markdown",
         "markdown_inline",
-        "svelte",
         "graphql",
         "bash",
         "lua",
@@ -41,7 +47,6 @@ return {
         "gitignore",
         "query",
         "vimdoc",
-        "c",
       },
       incremental_selection = {
         enable = true,
