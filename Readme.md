@@ -1,5 +1,19 @@
 # My neovim configuration
 
+Get Started with NeoVim
+
+## Install NeoVim
+
+```bash
+brew install neovim
+```
+
+## Clone this repository
+
+```bash
+git clone https://github.com/adharshmk96/nvim-config ~/.config/nvim
+```
+
 Keymap Reference.
 
 jk - exit insert mode
