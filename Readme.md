@@ -89,3 +89,11 @@ surround selection with (), "", ''
 
 - :InspectTree
 - :nmap
+
+## Macros to do multiline editing
+
+- `qa` - start recording
+- make changes
+- `q` - stop recording
+- `@a` - play recording
+- `n@a` - play recording n times

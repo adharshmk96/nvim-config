@@ -20,6 +20,7 @@ return {
 			["<leader>w"] = { name = "[W]indow", _ = "which_key_ignore" },
 			["<leader>t"] = { name = "[T]ab", _ = "which_key_ignore" },
 			["<leader>e"] = { name = "[E]xplorer", _ = "which_key_ignore" },
+			["<leader>f"] = { name = "[F]ile Tree", _ = "which_key_ignore" },
 
 			["<leader>h"] = { name = "[H]unk Git", _ = "which_key_ignore" },
 			["<leader>l"] = { name = "[L]azy git", _ = "which_key_ignore" },
