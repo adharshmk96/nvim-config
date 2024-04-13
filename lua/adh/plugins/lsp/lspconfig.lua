@@ -26,26 +26,26 @@ return {
 				local opts = { buffer = ev.buf, silent = true }
 
 				-- set keybinds
-				opts.desc = "Show LSP references"
-				keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
+				opts.desc = "[C]ode [L]ist References"
+				keymap.set("n", "<leader>cl", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
 
-				opts.desc = "Goto declaration"
-				keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
+				opts.desc = "[C]ode [D]eclaration"
+				keymap.set("n", "<leader>cD", vim.lsp.buf.declaration, opts) -- go to declaration
 
-				opts.desc = "Show LSP definitions"
-				keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
+				opts.desc = "[C]ode [D]efinition"
+				keymap.set("n", "<leader>cd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
 
-				opts.desc = "Show LSP implementations"
-				keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts) -- show lsp implementations
+				opts.desc = "[C]ode [I]mplementation"
+				keymap.set("n", "<leader>ci", "<cmd>Telescope lsp_implementations<CR>", opts) -- show lsp implementations
 
-				opts.desc = "Show LSP type definitions"
-				keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts) -- show lsp type definitions
+				opts.desc = "[C]ode [T]ype Definitions"
+				keymap.set("n", "<leader>ct", "<cmd>Telescope lsp_type_definitions<CR>", opts) -- show lsp type definitions
 
-				opts.desc = "See available code actions"
+				opts.desc = "[C]ode [A]ctions"
 				keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
 
-				opts.desc = "[R]e[N]ame LSP symbol"
-				keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts) -- smart rename
+				opts.desc = "[C]ode [R]ename"
+				keymap.set("n", "<leader>cr", vim.lsp.buf.rename, opts) -- smart rename
 
 				opts.desc = "[D]iagnostics show buffer diagnostics"
 				keymap.set("n", "<leader>db", "<cmd>Telescope diagnostics bufnr=0<CR>", opts) -- show  diagnostics for file

@@ -6,7 +6,7 @@ jk - exit insert mode
 
 ## Plugins
 
-```
+```bash
 ├── alpha.lua
 ├── auto-session.lua
 ├── autopairs.lua
