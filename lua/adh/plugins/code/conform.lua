@@ -1,3 +1,4 @@
+-- plugin to format code
 return {
 	"stevearc/conform.nvim",
 	event = { "BufReadPre", "BufNewFile" },

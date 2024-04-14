@@ -17,13 +17,12 @@ return {
 
 			["<leader>r"] = { name = "[R]e", _ = "which_key_ignore" },
 
+			["<leader>o"] = { name = "[O]pen", _ = "which_key_ignore" },
 			["<leader>w"] = { name = "[W]indow", _ = "which_key_ignore" },
 			["<leader>b"] = { name = "[B]uffer", _ = "which_key_ignore" },
-			["<leader>e"] = { name = "[E]xplorer", _ = "which_key_ignore" },
 			["<leader>f"] = { name = "[F]ile Tree", _ = "which_key_ignore" },
 
 			["<leader>h"] = { name = "[H]unk Git", _ = "which_key_ignore" },
-			["<leader>l"] = { name = "[L]azy git", _ = "which_key_ignore" },
 		})
 	end,
 	opts = {

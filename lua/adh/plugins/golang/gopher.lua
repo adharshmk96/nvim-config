@@ -6,7 +6,7 @@ return {
 	},
 	ft = { "go" },
 	config = function()
-		require("gopher").setup()
+		require("gopher").setup({})
 	end,
 	build = function()
 		vim.cmd([[silent! GopherInstall]])

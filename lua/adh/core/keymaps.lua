@@ -10,7 +10,7 @@ local keymap = vim.keymap -- for conciseness
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- clear search highlights
-keymap.set("n", "<Esc>", ":nohl<CR>", { desc = "Clear search highlights" })
+keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
@@ -24,6 +24,9 @@ keymap.set("n", "<leader>wv", "<C-w>v", { desc = "[W]indow split vertically" }) 
 keymap.set("n", "<leader>wh", "<C-w>s", { desc = "[W]indow split horizontally" }) -- split window horizontally
 keymap.set("n", "<leader>we", "<C-w>=", { desc = "[W]indow make splits equal" }) -- make split windows equal width & height
 keymap.set("n", "<leader>wx", "<cmd>close<CR>", { desc = "[W]indow close current split" }) -- close current split window
+
+keymap.set("n", "<leader>ol", "<cmd>Lazy<CR>", { desc = "[O]pen [L]azy" }) -- open lazygit
+keymap.set("n", "<leader>om", "<cmd>Mason<CR>", { desc = "[O]pen [M]ason" }) -- open mason
 
 -- keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "[T]ab open new tab" }) -- open new tab
 -- keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "[T]ab close current tab" }) -- close current tab
