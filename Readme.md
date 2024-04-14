@@ -97,3 +97,10 @@ surround selection with (), "", ''
 - `q` - stop recording
 - `@a` - play recording
 - `n@a` - play recording n times
+
+### use vim-visual-multi for multi cursor editing
+
+- `^ n` - add cursor below
+- make changes
+
+- `q` - to skip cursor

@@ -9,12 +9,45 @@ return {
 		vim.g.loaded_netrwPlugin = 1
 
 		nvimtree.setup({
+			disable_netrw = true, -- disable netrw completely to prevent conflicts
+			hijack_netrw = true, -- hijack netrw window on startup to prevent it from opening
+			hijack_cursor = true, -- hijack cursor in netrw buffer to prevent it from moving
+			hijack_unnamed_buffer_when_opening = false, -- hijack unnamed buffer when opening new file
+			sync_root_with_cwd = true, -- sync tree root dir with cwd
+			update_focused_file = {
+				enable = true, -- update the focused file on `BufEnter`
+				update_root = false, -- update the root directory of the tree to the one of the focused file
+			},
 			view = {
 				width = 35,
 				relativenumber = true,
 			},
+			filters = {
+				custom = { ".DS_Store" },
+			},
+			git = {
+				ignore = false,
+			},
+			filesystem_watchers = {
+				enable = true,
+			},
+			-- disable window_picker for
+			-- explorer to work well with
+			-- window splits
+			actions = {
+				open_file = {
+					resize_window = true, -- resize window to fit file
+					-- window_picker = {
+					-- 	enable = false, -- disable window picker
+					-- },
+				},
+			},
 			-- change folder arrow icons
 			renderer = {
+				root_folder_label = false,
+				-- highlight_git = false,
+				-- highlight_opened_files = "none",
+
 				indent_markers = {
 					enable = true,
 				},
@@ -43,22 +76,6 @@ return {
 						},
 					},
 				},
-			},
-			-- disable window_picker for
-			-- explorer to work well with
-			-- window splits
-			actions = {
-				open_file = {
-					window_picker = {
-						enable = false,
-					},
-				},
-			},
-			filters = {
-				custom = { ".DS_Store" },
-			},
-			git = {
-				ignore = false,
 			},
 		})
 

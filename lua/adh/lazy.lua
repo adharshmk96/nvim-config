@@ -13,6 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	{ import = "adh.plugins" },
+	{ import = "adh.plugins.ui" },
 	{ import = "adh.plugins.lsp" },
 	{ import = "adh.plugins.golang" },
 }, {
