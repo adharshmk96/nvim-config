@@ -1,0 +1,12 @@
+return {}
+-- return {
+-- 	"stevearc/oil.nvim",
+-- 	dependencies = { "nvim-tree/nvim-web-devicons" },
+-- 	config = function()
+-- 		require("oil").setup({
+-- 			default_file_explorer = true,
+--
+-- 			vim.keymap.set("n", "<leader>e", ":Oil<CR>", { desc = "Open Oil [E]xplorer" }), -- toggle neotree
+-- 		})
+-- 	end,
+-- }

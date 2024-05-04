@@ -28,8 +28,10 @@ keymap.set("n", "<leader>wx", "<cmd>close<CR>", { desc = "[W]indow close current
 keymap.set("n", "<leader>ol", "<cmd>Lazy<CR>", { desc = "[O]pen [L]azy" }) -- open lazygit
 keymap.set("n", "<leader>om", "<cmd>Mason<CR>", { desc = "[O]pen [M]ason" }) -- open mason
 
--- keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "[T]ab open new tab" }) -- open new tab
--- keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "[T]ab close current tab" }) -- close current tab
--- keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "[T]ab go to next tab" }) -- go to next tab
--- keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "[T]ab go to previous tab" }) -- go to previous tab
--- keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "[T]ab open current file in new tab" }) -- open file in new tab
+keymap.set("n", "<S-j>", "<cmd>m .+1<CR>", { desc = "Move line down" }) -- move line down
+keymap.set("n", "<S-k>", "<cmd>m .-2<CR>", { desc = "Move line up" }) -- move line up
+
+keymap.set("n", "<S-l>", "<cmd>join<CR>", { desc = "Join lines" }) -- join lines
+
+keymap.set("v", ">", ">gv", { noremap = true })
+keymap.set("v", "<", "<gv", { noremap = true })
